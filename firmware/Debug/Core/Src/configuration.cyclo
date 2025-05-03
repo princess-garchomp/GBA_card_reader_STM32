@@ -1,0 +1,2 @@
+configuration.c:15:6:UGLY_configuration_init	1
+configuration.c:82:6:UGLY_coniguration_main_foo	3
