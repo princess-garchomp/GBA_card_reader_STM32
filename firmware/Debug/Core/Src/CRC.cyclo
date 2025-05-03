@@ -1,0 +1,4 @@
+CRC.c:3:6:init_CRC	1
+CRC.c:8:9:get_CRC_data_value	1
+CRC.c:12:6:clear_CRC_value	1
+CRC.c:16:6:update_CRC_data_value	1

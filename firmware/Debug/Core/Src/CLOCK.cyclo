@@ -1,0 +1,8 @@
+core_cm3.h:1639:22:__NVIC_SetPriority	2
+CLOCK.c:5:6:enable_HSI_as_sysclock_src	3
+CLOCK.c:21:6:enable_HSE_as_sysclock_src	3
+CLOCK.c:41:6:enable_PLL_sysclock_src_external_HSE_PLL_src	4
+CLOCK.c:101:6:config_systic	1
+CLOCK.c:125:6:config_systic_for_ms	1
+CLOCK.c:160:6:Delay	2
+CLOCK.c:168:6:SysTick_Handler	2

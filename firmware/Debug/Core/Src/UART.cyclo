@@ -1,0 +1,17 @@
+core_cm3.h:1511:22:__NVIC_EnableIRQ	2
+core_cm3.h:1639:22:__NVIC_SetPriority	2
+UART.c:43:6:generic_USART_config	1
+UART.c:76:6:config_UART1_blocking_9600baud	1
+UART.c:98:6:config_UART1_blocking_115200baud	1
+UART.c:122:6:UART_BYTE_send_blocking	3
+UART.c:131:9:UART_BYTE_recieve_blocking	2
+UART.c:143:6:config_UART1_interrupt	1
+UART.c:170:6:UART_send_byte_interrupt_start	1
+UART.c:175:6:UART_interrupt_byte_send	2
+UART.c:182:6:set_USART_TX	1
+UART.c:186:9:UART_interrupt_byte_recieve	2
+UART.c:195:9:get_last_USART_RX	1
+UART.c:199:6:UART_DMA_TX_RX_INTERRUPT	1
+UART.c:238:6:UART_DMA_START	1
+UART.c:243:6:UART_DMA_RESET	1
+UART.c:253:6:USART1_IRQHandler	1

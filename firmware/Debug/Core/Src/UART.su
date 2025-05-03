@@ -1,0 +1,17 @@
+../Drivers/CMSIS/Include/core_cm3.h:1511:22:__NVIC_EnableIRQ	16	static
+../Drivers/CMSIS/Include/core_cm3.h:1639:22:__NVIC_SetPriority	16	static
+../Core/Src/UART.c:43:6:generic_USART_config	16	static
+../Core/Src/UART.c:76:6:config_UART1_blocking_9600baud	8	static
+../Core/Src/UART.c:98:6:config_UART1_blocking_115200baud	8	static
+../Core/Src/UART.c:122:6:UART_BYTE_send_blocking	16	static
+../Core/Src/UART.c:131:9:UART_BYTE_recieve_blocking	24	static
+../Core/Src/UART.c:143:6:config_UART1_interrupt	16	static
+../Core/Src/UART.c:170:6:UART_send_byte_interrupt_start	16	static
+../Core/Src/UART.c:175:6:UART_interrupt_byte_send	16	static
+../Core/Src/UART.c:182:6:set_USART_TX	16	static
+../Core/Src/UART.c:186:9:UART_interrupt_byte_recieve	16	static
+../Core/Src/UART.c:195:9:get_last_USART_RX	4	static
+../Core/Src/UART.c:199:6:UART_DMA_TX_RX_INTERRUPT	8	static
+../Core/Src/UART.c:238:6:UART_DMA_START	4	static
+../Core/Src/UART.c:243:6:UART_DMA_RESET	4	static
+../Core/Src/UART.c:253:6:USART1_IRQHandler	4	static
