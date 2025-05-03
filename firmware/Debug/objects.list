@@ -4,6 +4,7 @@
 "./Core/Src/GPIO.o"
 "./Core/Src/UART.o"
 "./Core/Src/UART_TO_USB_COMM.o"
+"./Core/Src/configuration.o"
 "./Core/Src/main.o"
 "./Core/Src/system_stm32f1xx.o"
 "./Core/Startup/startup_stm32f103c6tx.o"

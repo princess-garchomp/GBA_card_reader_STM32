@@ -11,6 +11,7 @@ C_SRCS += \
 ../Core/Src/GPIO.c \
 ../Core/Src/UART.c \
 ../Core/Src/UART_TO_USB_COMM.c \
+../Core/Src/configuration.c \
 ../Core/Src/main.c \
 ../Core/Src/system_stm32f1xx.c 
 
@@ -21,6 +22,7 @@ OBJS += \
 ./Core/Src/GPIO.o \
 ./Core/Src/UART.o \
 ./Core/Src/UART_TO_USB_COMM.o \
+./Core/Src/configuration.o \
 ./Core/Src/main.o \
 ./Core/Src/system_stm32f1xx.o 
 
@@ -31,6 +33,7 @@ C_DEPS += \
 ./Core/Src/GPIO.d \
 ./Core/Src/UART.d \
 ./Core/Src/UART_TO_USB_COMM.d \
+./Core/Src/configuration.d \
 ./Core/Src/main.d \
 ./Core/Src/system_stm32f1xx.d 
 
@@ -42,7 +45,7 @@ Core/Src/%.o Core/Src/%.su Core/Src/%.cyclo: ../Core/Src/%.c Core/Src/subdir.mk
 clean: clean-Core-2f-Src
 
 clean-Core-2f-Src:
-	-$(RM) ./Core/Src/CART_READ.cyclo ./Core/Src/CART_READ.d ./Core/Src/CART_READ.o ./Core/Src/CART_READ.su ./Core/Src/CLOCK.cyclo ./Core/Src/CLOCK.d ./Core/Src/CLOCK.o ./Core/Src/CLOCK.su ./Core/Src/CRC.cyclo ./Core/Src/CRC.d ./Core/Src/CRC.o ./Core/Src/CRC.su ./Core/Src/GPIO.cyclo ./Core/Src/GPIO.d ./Core/Src/GPIO.o ./Core/Src/GPIO.su ./Core/Src/UART.cyclo ./Core/Src/UART.d ./Core/Src/UART.o ./Core/Src/UART.su ./Core/Src/UART_TO_USB_COMM.cyclo ./Core/Src/UART_TO_USB_COMM.d ./Core/Src/UART_TO_USB_COMM.o ./Core/Src/UART_TO_USB_COMM.su ./Core/Src/main.cyclo ./Core/Src/main.d ./Core/Src/main.o ./Core/Src/main.su ./Core/Src/system_stm32f1xx.cyclo ./Core/Src/system_stm32f1xx.d ./Core/Src/system_stm32f1xx.o ./Core/Src/system_stm32f1xx.su
+	-$(RM) ./Core/Src/CART_READ.cyclo ./Core/Src/CART_READ.d ./Core/Src/CART_READ.o ./Core/Src/CART_READ.su ./Core/Src/CLOCK.cyclo ./Core/Src/CLOCK.d ./Core/Src/CLOCK.o ./Core/Src/CLOCK.su ./Core/Src/CRC.cyclo ./Core/Src/CRC.d ./Core/Src/CRC.o ./Core/Src/CRC.su ./Core/Src/GPIO.cyclo ./Core/Src/GPIO.d ./Core/Src/GPIO.o ./Core/Src/GPIO.su ./Core/Src/UART.cyclo ./Core/Src/UART.d ./Core/Src/UART.o ./Core/Src/UART.su ./Core/Src/UART_TO_USB_COMM.cyclo ./Core/Src/UART_TO_USB_COMM.d ./Core/Src/UART_TO_USB_COMM.o ./Core/Src/UART_TO_USB_COMM.su ./Core/Src/configuration.cyclo ./Core/Src/configuration.d ./Core/Src/configuration.o ./Core/Src/configuration.su ./Core/Src/main.cyclo ./Core/Src/main.d ./Core/Src/main.o ./Core/Src/main.su ./Core/Src/system_stm32f1xx.cyclo ./Core/Src/system_stm32f1xx.d ./Core/Src/system_stm32f1xx.o ./Core/Src/system_stm32f1xx.su
 
 .PHONY: clean-Core-2f-Src
 
