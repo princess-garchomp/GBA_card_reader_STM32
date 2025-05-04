@@ -10,17 +10,17 @@ uint16_t read_rom_word(uint32_t input)
 	input = input >> 1;
 
 	write_rom_address(input);
-	Delay(5);
+	Delay(1);
 	CS_LOW();
-	Delay(5);
+	Delay(1);
 	set_cart_rom_pins_input();
-	Delay(5);
+	Delay(1);
 	RD_LOW();
-	Delay(5);
+	Delay(1);
 	return_value = read_cart_rom();
 	CS_HIGH();
 	RD_HIGH();
-	Delay(5);
+	Delay(1);
 
 	return return_value;
 
