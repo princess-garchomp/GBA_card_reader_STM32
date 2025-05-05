@@ -32,8 +32,8 @@ int main(void)
 big_test_foo()
 {
 	static uint16_t tempWord=0;
-	//static uint32_t cartSize = 8192000;8704000
-	static uint32_t cartSize = 8704000;
+	static uint32_t cartSize = 8192000;
+	//static uint32_t cartSize = 8704000;
 
 	for (uint32_t myAddress = 0; myAddress < cartSize; myAddress += 512)
 	//for (uint32_t myAddress = 298712; myAddress < cartSize; myAddress += 30)
