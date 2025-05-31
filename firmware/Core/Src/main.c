@@ -35,12 +35,16 @@ big_test_foo()
 	static uint32_t cartSize = 8192000;
 	//static uint32_t cartSize = 8704000;
 
-	for (uint32_t myAddress = 0; myAddress < cartSize; myAddress += 512)
+
+	//for (uint32_t myAddress = 0; myAddress < cartSize; myAddress += 512)
+	for (uint32_t myAddress = 0; myAddress < cartSize; myAddress += 1024)
+
 	//for (uint32_t myAddress = 298712; myAddress < cartSize; myAddress += 30)
 	{
 		(void) UART_BYTE_recieve_blocking(USART1);
 		//for (int currWord = 0; currWord < 12; currWord += 2)
-		for (int currWord = 0; currWord < 512; currWord += 2)
+		//for (int currWord = 0; currWord < 512; currWord += 2)
+		for (int currWord = 0; currWord < 1024; currWord += 2)
 		{
 
 			tempWord = read_rom_word(myAddress + currWord);

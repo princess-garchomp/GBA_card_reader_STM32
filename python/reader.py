@@ -9,17 +9,20 @@ ser = serial.Serial("COM10", baudrate=115200, timeout=1)
 def foo_one():
     start_time = time.time()
     #with open("output_two.gba", "wb") as file:
-    with open("output_four.gba", "wb+") as file:
+  
+    with open("output_seven.gba", "wb+") as file:
         #32\
         #for i in range(1000):#this should get to the point of bad stuff getting written in
-        for i in range(16400): #output gba 2
+        #for i in range(16400): #output gba 2
+        for i in range(8200): #output gba 2
         #for i in range(3):
         #for i in range(200):
             # Send the character "u"
             ser.write(b'u')  # Use b'u' to send as bytes
 
             # Read 100 bytes from the serial port
-            data = ser.read(512)
+            #data = ser.read(512)
+            data = ser.read(1024)
 
             # Print the received data
             modified_data = data.replace(b'\x00', b'\x20')
@@ -32,7 +35,8 @@ def foo_one():
             #print(data)
 
             #file.write(data.decode(errors="ignore"))
-            file.write(modified_data_four)
+            #file.write(modified_data_four)
+            file.write(data)
             #print(modified_data_four)
 
             #this should read out the data thqt was just written and print it out
@@ -91,6 +95,6 @@ def foo_two():
 
                 
 
-#foo_one()
-foo_two()
+foo_one()
+#foo_two()
 ser.close()
